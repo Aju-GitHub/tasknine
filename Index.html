@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover to Hide Image</title>
+</head>
+<body>
+
+  <!-- Image for world's first computer -->
+  <img id="hoverImage" 
+       src="https://upload.wikimedia.org/wikipedia/commons/6/6c/ENIAC_Penn1.jpg" 
+       width="300" 
+       alt="React Logo">
+
+  
+  <script>
+    const img = document.getElementById("hoverImage");
+
+    document.addEventListener("mousemove", function(e) {
+      const rect = img.getBoundingClientRect();
+      const isInside =
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom;
+
+      if (isInside) {
+        img.style.visibility = "hidden";
+      } else {
+        img.style.visibility = "visible";
+      }
+    });
+  </script>
+
+</body>
+</html>
