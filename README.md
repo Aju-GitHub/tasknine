@@ -5,9 +5,9 @@ Contains HTML single code from my task 10 webpage with an initially invisible im
 
 Task-9/
 
-/- README - Documentation
-
 /- index.html - FUll code
+
+/- README - Documentation
 
 **Rights and Usage:**
 
